@@ -1,0 +1,22 @@
+Service 1: Sensor Data Producer
+	   The service generates a random temperature value
+	   and write it to a shared memory every 2s.
+
+Service 2: Data Processor
+	   This service gets the temperature values from the
+	   shared memory and shows the average of the past temperature values (iterations defined by StatIter).
+
+Service 3: Alert Manager
+	   This service gets the temperature values from the
+	   shared memory and shows an alert when the temperature value is above a Limit value.
+
+
+- To build the services run:
+
+	$ make
+	Note that the binary files will be generated in /output dir.
+
+- To run the services, open 3 terminals and launch every service
+  seperatly starting woth service1.
+
+	$ ./service_<id> with id being the service number
