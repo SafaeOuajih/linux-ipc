@@ -55,7 +55,7 @@ int main() {
 
 	while (1)
 	{
-		temp = rand() % 200 - 99; /* Generate a rand temperature value -100 to 100 C */
+		temp = rand() % 201 - 100; /* Generate a rand temperature value -100 to 100 C */
 		sprintf(temperature,"%d",temp);
 
 		/* Decrement the semaphore to write to shm */
