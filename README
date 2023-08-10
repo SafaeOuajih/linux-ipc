@@ -17,6 +17,6 @@ Service 3: Alert Manager
 	Note that the binary files will be generated in /output dir.
 
 - To run the services, open 3 terminals and launch every service
-  seperatly starting woth service1.
+  seperatly starting with service 1.
 
 	$ ./service_<id> with id being the service number
